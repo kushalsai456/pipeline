@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('BUILD') {
 			parallel {
-				stage('BUILD1')
+				stage('BUILD1') {
 					steps {
 						sh 'echo this is my first stage in pipeline job'
 						sh 'ls -lrt'
